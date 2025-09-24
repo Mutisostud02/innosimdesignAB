@@ -22,7 +22,7 @@ export default function Footer() {
           <div className="footer-col">
             <h5>Contact</h5>
             <p className="footer-muted">
-              Ludvig Odin — Technical & Asset Manager<br/>
+              Ludvig Odin — Technical Director and Asset Manager<br/>
               <a className="link" href="mailto:ludvig.odin@innosimab.com">ludvig.odin@innosimab.com</a><br/>
               +46 768 67 01 45
             </p>

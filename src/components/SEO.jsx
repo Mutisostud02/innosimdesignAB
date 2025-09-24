@@ -51,17 +51,28 @@ export default function SEO({
 
     upsertLink('canonical', fullUrl)
 
+    // Provide default Organization structured data with logo unless explicitly disabled (structuredData === null)
+    const defaultOrg = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Innosim Design AB',
+      url: SITE_URL,
+      logo: `${SITE_URL}/logo/android-chrome-512x512.png`,
+    }
+
+    const sd = structuredData === undefined ? defaultOrg : structuredData
+
     let ldEl = document.getElementById('ld-json')
-    if (structuredData) {
+    if (sd) {
       if (!ldEl) {
         ldEl = document.createElement('script')
         ldEl.type = 'application/ld+json'
         ldEl.id = 'ld-json'
         document.head.appendChild(ldEl)
       }
-      ldEl.textContent = JSON.stringify(structuredData)
+      ldEl.textContent = JSON.stringify(sd)
     } else if (ldEl) {
-      // Remove old structured data if not provided
+      // Remove old structured data if explicitly disabled
       ldEl.parentNode.removeChild(ldEl)
     }
   }, [title, description, path, image, type, structuredData])

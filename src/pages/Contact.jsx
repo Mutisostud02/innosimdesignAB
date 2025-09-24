@@ -39,7 +39,7 @@ export default function Contact() {
             <div className="contact-card">
               <h3>Contact person</h3>
               <p>
-                Ludvig Odin — Technical & Asset Manager<br/>
+                Ludvig Odin — Technical Director and Asset Manager<br/>
                 <a className="link" href="mailto:ludvig.odin@innosimab.com">ludvig.odin@innosimab.com</a><br/>
                 +46 768 67 01 45
               </p>

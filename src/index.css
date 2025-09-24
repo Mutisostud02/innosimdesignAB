@@ -150,7 +150,7 @@ body {
 .submenu {
   position: absolute;
   left: 0;
-  top: calc(100% + 6px);
+  top: 100%; /* remove gap so hover doesn't break when moving cursor */
   display: none;
   min-width: 220px;
   padding: 8px;
