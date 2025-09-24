@@ -11,7 +11,11 @@ export default function Header() {
       <div className="container nav">
         <div className="brand">
           <Link to="/" onClick={closeMenu} aria-label="Innosim Design AB – Home">
-            <img src="/logo/android-chrome-192x192.png" alt="Innosim Design AB" style={{ height: 36, width: 'auto' }} />
+            <img
+              src="/logo/android-chrome-192x192.png"
+              alt="Innosim Design AB"
+              style={{ height: 56, width: 114 }}
+            />
           </Link>
         </div>
         <button

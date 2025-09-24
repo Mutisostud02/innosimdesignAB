@@ -74,6 +74,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sustainability and operations context */}
+      <section id="sustainability-overview" className="feature">
+        <div className="container">
+          <h2>Sustainable operations and on‑field support</h2>
+          <p>
+            Innosim Design AB operates a specialized propeller shop, maintaining aircraft like the Fokker 50, Saab 340, and Dash 8 with flexible on‑field support to reduce downtime. The company is strongly committed to sustainable aviation, adhering to environmental laws and structured, efficient processes.
+          </p>
+          <p>
+            They prioritize greener technologies, waste reduction, and energy efficiency, while fostering a culture of environmental responsibility through staff training and clear routines. By optimizing transport, reducing hazardous materials, and promoting digital meetings, Innosim works toward a lower climate footprint and a more sustainable future for aviation.
+          </p>
+        </div>
+      </section>
+
       <section id="approvals" className="feature muted">
         <div className="container">
           <h2>Approved MRO</h2>
