@@ -1,7 +1,37 @@
 import { Link } from 'react-router-dom'
+import SEO from '../components/SEO.jsx'
 export default function Home() {
   return (
     <>
+      <SEO
+        title="Innosim Design AB – Propeller Services"
+        description="Certified propeller maintenance, repair, overhaul, field services, and spare parts for Fokker 50, Saab 340, Dash 8 and more."
+        path="/"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "name": "Innosim Design AB",
+              "url": "https://innosimdesignab.com/",
+              "logo": "https://innosimdesignab.com/logo.svg",
+              "email": "info@innosimdesignab.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Hangarvägen 4, Box 57",
+                "addressLocality": "Malmö‑Sturup",
+                "postalCode": "239 32",
+                "addressCountry": "SE"
+              }
+            },
+            {
+              "@type": "WebSite",
+              "name": "Innosim Design AB",
+              "url": "https://innosimdesignab.com/"
+            }
+          ]
+        }}
+      />
       <section className="hero">
         <div className="container">
           <h1>Know-how backed by experience</h1>

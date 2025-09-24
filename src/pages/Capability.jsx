@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function Capability() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Capability List – Innosim Design AB"
+          description="Authorized propeller maintenance and repair capabilities. Download the full capability list."
+          path="/capability-list"
+        />
         <h1>Capability list</h1>
         <p className="lead">Discover the scope of our authorized services. Our capability list outlines what we are certified and equipped to handle.</p>
 

@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function Sustainability() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Sustainability – Innosim Design AB"
+          description="Committed to continuous environmental improvement in aviation through responsible operations."
+          path="/sustainability"
+        />
         <h1>Sustainability</h1>
         <p className="lead">Committed to continuous environmental improvement in aviation.</p>
 

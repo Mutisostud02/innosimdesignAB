@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function FullMRO() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Full MRO Capability – Innosim Design AB"
+          description="End-to-end propeller maintenance, repair, overhaul, balancing and testing by certified technicians."
+          path="/our-services/full-mro-capability"
+        />
         <h1>Full MRO capability</h1>
         <p className="lead">End-to-end propeller maintenance, repair, and overhaul to keep your fleet mission-ready.</p>
 

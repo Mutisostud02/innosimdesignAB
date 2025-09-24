@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function Approvals() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Approvals & Certificates – Innosim Design AB"
+          description="Current approvals and certificates supporting our aircraft propeller maintenance and repair services."
+          path="/approvals-and-certificates"
+        />
         <h1>Approvals & certificates</h1>
         <p className="lead">Certified excellence you can trust. We operate under current approvals and certifications and perform services to the highest industry standards.</p>
 

@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function About() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="About Us – Innosim Design AB"
+          description="Decades of hands‑on experience and modern processes delivering dependable propeller services."
+          path="/about"
+        />
         <h1>About us</h1>
         <p className="lead">We combine decades of hands‑on experience with modern processes to deliver dependable propeller services.</p>
 

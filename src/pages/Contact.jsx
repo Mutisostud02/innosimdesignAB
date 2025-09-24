@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SEO from '../components/SEO.jsx'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -11,6 +12,11 @@ export default function Contact() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Contact – Innosim Design AB"
+          description="Reach our team for propeller maintenance, repairs, field services, and spare parts."
+          path="/contact"
+        />
         <h1>Contact us</h1>
         <p className="lead">With strategically located offices and workshops, we deliver high‑quality propeller services where you need them.</p>
 
@@ -34,7 +40,7 @@ export default function Contact() {
               <h3>Contact person</h3>
               <p>
                 Ludvig Odin — Technical & Asset Manager<br/>
-                <a className="link" href="mailto:ludvig.odin@innosim.com">ludvig.odin@innosim.com</a><br/>
+                <a className="link" href="mailto:ludvig.odin@innosimab.com">ludvig.odin@innosimab.com</a><br/>
                 +46 768 67 01 45
               </p>
             </div>

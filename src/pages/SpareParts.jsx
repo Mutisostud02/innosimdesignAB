@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function SpareParts() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Spare Parts – Innosim Design AB"
+          description="Genuine and approved propeller components: blades, de-ice boots, seals, bearings, hubs, spinners, and more."
+          path="/our-services/spare-parts"
+        />
         <h1>Spare parts</h1>
         <p className="lead">High-quality propeller spare parts, available new and pre-owned, to keep your aircraft operating reliably.</p>
 

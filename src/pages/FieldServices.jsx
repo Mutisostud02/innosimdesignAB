@@ -1,7 +1,13 @@
+import SEO from '../components/SEO.jsx'
 export default function FieldServices() {
   return (
     <section className="feature">
       <div className="container">
+        <SEO
+          title="Field Services – Innosim Design AB"
+          description="On‑site propeller troubleshooting, inspections, adjustments, and checks to minimize aircraft downtime."
+          path="/our-services/field-services"
+        />
         <h1>Field services</h1>
         <p className="lead">On‑site troubleshooting and maintenance to reduce downtime and get your aircraft back in service quickly.</p>
 
