@@ -255,6 +255,31 @@ h2, h3 { letter-spacing: -0.01em; }
 .cta h2 { font-size: clamp(1.5rem, 3.5vw, 2.2rem); }
 .cta p { color: var(--muted); margin-top: 8px; max-width: 70ch; }
 
+/* Logo strip (partners) */
+.logo-strip { padding: 18px 0 28px; }
+.logo-strip .logos {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: center;
+  gap: 20px;
+  filter: saturate(0.4);
+  opacity: 0.9;
+}
+.logo-strip img {
+  max-height: 66px;
+  width: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+@media (max-width: 900px) {
+  .logo-strip .logos { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .logo-strip img { max-height: 55px; }
+}
+@media (max-width: 640px) {
+  .logo-strip .logos { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .logo-strip img { max-height: 48px; }
+}
+
 /* Subtle animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(10px); }

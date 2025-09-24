@@ -36,7 +36,7 @@ export default function Home() {
         <div className="container">
           <h1>Know-how backed by experience</h1>
           <p className="lead">
-            Our propeller shop specializes in maintenance and repair, keeping aircraft like the Fokker 50, Saab 340 and Dash 8 in top condition. With flexible on-field support, we help minimize downtime and ensure reliable performance in the air.
+            Our air propeller shop specializes in maintenance and repair, keeping aircraft like the Fokker 50, Saab 340 and Dash 8 in top condition. With flexible on-field support, we help minimize downtime and ensure reliable performance in the air.
           </p>
           <p><a href="#services" className="button primary">Discover our expertise</a></p>
         </div>
@@ -88,6 +88,21 @@ export default function Home() {
             We specialize in the repair and maintenance of aircraft propellers. Whether you need urgent assistance or want to schedule a repair, our team is ready to support you with tailored solutions.
           </p>
           <a href="/contact" className="button primary">Contact us</a>
+        </div>
+      </section>
+
+      {/* Logo/image strip just above the footer */}
+      <section className="logo-strip">
+        <div className="container">
+          <h3 style={{marginBottom: 12}}>Patnering Companies</h3>
+          <div className="logos" aria-label="Partner logos">
+            <img src="/home/airest-logo-768x214.webp" alt="Airest logo" loading="lazy" />
+            <img src="/home/Fokker_Logo_2012.svg-300x188.png.webp" alt="Fokker logo" loading="lazy" />
+            <img src="/home/cropped-TAMlogo-3.png.webp" alt="TAM logo" loading="lazy" />
+            <img src="/home/logo_a3.webp" alt="A3 logo" loading="lazy" />
+            <img src="/home/Group-14.png.webp" alt="Partner logo" loading="lazy" />
+            <img src="/home/images-1.png.webp" alt="Partner logo" loading="lazy" />
+          </div>
         </div>
       </section>
     </>
