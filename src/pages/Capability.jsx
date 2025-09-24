@@ -5,7 +5,7 @@ export default function Capability() {
       <div className="container">
         <SEO
           title="Capability List – Innosim Design AB"
-          description="Authorized propeller maintenance and repair capabilities. Download the full capability list."
+          description="Authorized propeller maintenance and repair capabilities."
           path="/capability-list"
         />
         <h1>Capability list</h1>
@@ -16,10 +16,7 @@ export default function Capability() {
           From routine inspections to specialized propeller repairs, our team operates under the required certifications and processes
           to meet stringent industry standards.
         </p>
-        <p style={{marginTop:12}}>
-          For the complete list of capabilities, download the PDF below.
-        </p>
-        <p><a className="button" href="#" onClick={(e)=>e.preventDefault()}>Download capability list (PDF)</a></p>
+        
       </div>
     </section>
   )

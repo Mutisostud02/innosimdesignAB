@@ -332,6 +332,23 @@ h2, h3 { letter-spacing: -0.01em; }
 /* Responsive */
 @media (max-width: 900px) {
   .cards { grid-template-columns: 1fr 1fr; }
+  /* Enable hamburger behavior for tablets/smaller screens */
+  .nav { position: relative; }
+  .hamburger { display: inline-flex; }
+  .nav > nav { display: none; position: absolute; right: 0; top: 54px; background: var(--dark-bg); border: 1px solid var(--dark-border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); }
+  .nav > nav.open { display: block; }
+  .menu { flex-direction: column; align-items: stretch; gap: 2px; padding: 8px; min-width: 240px; }
+  .menu a, .menu button { padding: 8px 10px; text-align: left; }
+
+  /* Also open menu on hover/focus for pointer-equipped small screens */
+  @media (hover: hover) {
+    .nav .hamburger:hover + nav,
+    .nav .hamburger:focus-visible + nav,
+    .nav > nav:hover,
+    .nav > nav:focus-within {
+      display: block;
+    }
+  }
 }
 
 @media (max-width: 640px) {

@@ -15,10 +15,6 @@ export default function SafetyPolicy() {
         <p>
           Our policy outlines our approach to risk management, regulatory compliance, and continuous improvement in aviation safety. These principles guide everyday decisions and long-term planning.
         </p>
-        <p style={{marginTop:12}}>
-          Click below to download the full safety policy document.
-        </p>
-        <p><a className="button" href="#" onClick={(e)=>e.preventDefault()}>Download safety policy (PDF)</a></p>
       </div>
     </section>
   )

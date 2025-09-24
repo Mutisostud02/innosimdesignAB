@@ -27,8 +27,8 @@ export default function Approvals() {
           <div>
             <h3>We have the following certificates</h3>
             <ul className="bullets">
-              <li><a className="link" href="#" onClick={(e)=>e.preventDefault()}>MRO certificate (PDF)</a></li>
-              <li><a className="link" href="#" onClick={(e)=>e.preventDefault()}>Authority approval (PDF)</a></li>
+              <li>MRO certificate</li>
+              <li>Authority approval</li>
             </ul>
           </div>
         </div>

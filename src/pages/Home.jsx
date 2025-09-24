@@ -70,7 +70,6 @@ export default function Home() {
         <div className="container">
           <h2>Safety first</h2>
           <p>We uphold rigorous safety standards across our operations, protecting our employees, customers, and partners.</p>
-          <a className="button" href="#" onClick={(e)=>e.preventDefault()}>Download Safety Policy (PDF)</a>
         </div>
       </section>
 
