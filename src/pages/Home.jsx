@@ -34,11 +34,24 @@ export default function Home() {
       />
       <section className="hero">
         <div className="container">
-          <h1>Know-how backed by experience</h1>
-          <p className="lead">
-            Our air propeller shop specializes in maintenance and repair, keeping aircraft like the Fokker 50, Saab 340 and Dash 8 in top condition. With flexible on-field support, we help minimize downtime and ensure reliable performance in the air.
-          </p>
-          <p><a href="#services" className="button primary">Discover our expertise</a></p>
+          <div className="hero-grid">
+            <div className="hero-copy">
+              <h1>Know-how backed by experience</h1>
+              <p className="lead">
+                Our air propeller shop specializes in maintenance and repair, keeping aircraft like the Fokker 50, Saab 340 and Dash 8 in top condition. With flexible on-field support, we help minimize downtime and ensure reliable performance in the air.
+              </p>
+              <p><a href="#services" className="button primary">Discover our expertise</a></p>
+            </div>
+            <figure className="hero-visual" aria-hidden="true">
+              <img
+                src="/home/prop1.jpg"
+                alt=""
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -49,10 +62,11 @@ export default function Home() {
           <div className="cards">
             <article id="mro" className="card">
               <img
-                className="propeller-icon"
-                src="/propeller-svgrepo-com%20(1).svg"
-                alt=""
-                aria-hidden="true"
+                className="card-thumb"
+                src="/home/prop2.jpg"
+                alt="Maintenance, repair and overhaul of aircraft propellers"
+                loading="lazy"
+                decoding="async"
               />
               <h3>Full MRO capability</h3>
               <p>Complete propeller care, from inspections to repairs, ensuring top performance and reliability—whenever and wherever you need it.</p>
@@ -60,10 +74,11 @@ export default function Home() {
             </article>
             <article id="field" className="card">
               <img
-                className="propeller-icon"
-                src="/propeller-svgrepo-com%20(1).svg"
-                alt=""
-                aria-hidden="true"
+                className="card-thumb"
+                src="/home/prop3.jpg"
+                alt="On-site field services and troubleshooting"
+                loading="lazy"
+                decoding="async"
               />
               <h3>Field services</h3>
               <p>On-site troubleshooting and maintenance to reduce aircraft downtime and return to service quickly.</p>
@@ -71,10 +86,11 @@ export default function Home() {
             </article>
             <article id="parts" className="card">
               <img
-                className="propeller-icon"
-                src="/propeller-svgrepo-com%20(1).svg"
-                alt=""
-                aria-hidden="true"
+                className="card-thumb"
+                src="/home/prop4.png"
+                alt="OEM and approved spare parts for propellers"
+                loading="lazy"
+                decoding="async"
               />
               <h3>Spare parts</h3>
               <p>Reliable sourcing of OEM and approved components to keep your fleet mission-ready.</p>

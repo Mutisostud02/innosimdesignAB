@@ -11,6 +11,24 @@ export default function Sustainability() {
         <h1>Sustainability</h1>
         <p className="lead">Committed to continuous environmental improvement in aviation.</p>
 
+        <div className="feature-split">
+          <div>
+            <h2 style={{marginTop:0}}>Responsible operations</h2>
+            <p>
+              We prioritise energy efficiency, waste reduction and the substitution principle in our workshop and field activities, aiming to reduce
+              environmental impact without compromising safety or performance.
+            </p>
+          </div>
+          <figure className="feature-visual" aria-hidden="true">
+            <img
+              src="/home/prop3.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+
         <h2 style={{marginTop:16}}>Our commitment to sustainable aviation</h2>
         <p>
           At Innosim Design AB, we are committed to ongoing environmental improvement through responsible, sustainable practices. We comply with relevant environmental laws and operate with efficient, structured processes.

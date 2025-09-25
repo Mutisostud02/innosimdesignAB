@@ -186,6 +186,25 @@ body {
 .hero {
   padding: 72px 0 40px;
 }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 22px;
+}
+.hero-copy { display: grid; gap: 12px; }
+.hero-visual {
+  border: 1px solid var(--dark-border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.28);
+}
+.hero-visual img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
 .hero h1 {
   font-size: clamp(2rem, 6vw, 3.2rem);
   line-height: 1.04;
@@ -235,38 +254,70 @@ h2, h3 { letter-spacing: -0.01em; }
   padding: 16px;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
+.card-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--dark-border);
+  margin-bottom: 10px;
+  display: block;
+}
 .card:hover { transform: translateY(-2px); border-color: color-mix(in oklab, var(--dark-border), var(--dark-text) 25%); box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
 .card h3 { font-size: 1.1rem; color: var(--dark-text); }
 .card p { color: var(--dark-muted); margin-top: 6px; }
 .card .link { display: inline-block; margin-top: 10px; color: var(--accent); text-decoration: none; }
 .card .link:hover { text-decoration: underline; }
 
-/* Propeller icon inside cards */
-.propeller-icon {
-  width: 101px;
-  height: 101px;
-  margin: 0 auto 10px;
-  opacity: 0.9;
-  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
-  transform-origin: 50% 50%;
-  pointer-events: none; /* purely decorative */
-}
-
-@keyframes propeller-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Spin propeller while hovering the card */
-.card:hover .propeller-icon {
-  animation: propeller-spin 0.9s linear infinite;
-}
 
 /* Feature blocks */
 .feature { padding: 42px 0; }
 .feature.muted { background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.03) 10%, transparent); }
 .feature h2 { font-size: clamp(1.4rem, 3vw, 2rem); }
 .feature p { color: var(--muted); margin-top: 6px; max-width: 70ch; }
+
+/* Feature split layout (text + side image) */
+.feature-split {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-areas: "content visual";
+  align-items: start;
+  gap: 18px;
+  margin-top: 14px;
+}
+.feature-split .feature-content { grid-area: content; }
+.feature-visual { grid-area: visual;
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.26);
+}
+.feature-visual img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Plain variant: no frame or shadow, narrower graphic */
+.feature-visual.plain {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  display: grid;
+  place-items: start center;
+}
+.feature-visual.plain img {
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.7; /* slightly faded */
+}
+
+.feature-split.reverse {
+  grid-template-areas: "visual content";
+}
 
 /* Lists */
 .bullets { margin: 8px 0 0 1rem; color: var(--muted); display: grid; gap: 6px; }
@@ -321,7 +372,6 @@ h2, h3 { letter-spacing: -0.01em; }
 
 @media (prefers-reduced-motion: reduce) {
   .button, .card, .hero .container, .services .card, .feature .container, .cta .container { transition: none !important; animation: none !important; }
-  .card:hover .propeller-icon { animation: none !important; }
 }
 
 /* Footer */
@@ -354,6 +404,10 @@ h2, h3 { letter-spacing: -0.01em; }
 
 /* Responsive */
 @media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-visual img { height: 280px; }
+  .feature-split { grid-template-columns: 1fr; grid-template-areas: "content" "visual"; }
+  .feature-split img { height: 220px; }
   .cards { grid-template-columns: 1fr 1fr; }
   /* Enable hamburger behavior for tablets/smaller screens */
   .nav { position: relative; }
@@ -383,6 +437,9 @@ h2, h3 { letter-spacing: -0.01em; }
   .menu a, .menu button { padding: 8px 10px; text-align: left; }
   .cards { grid-template-columns: 1fr; }
   .hero { padding-top: 54px; }
+  .hero-visual img { height: 220px; }
+  .card-thumb { height: 120px; }
+  .feature-visual img { height: 220px; }
 }
 
 /* Contact form */

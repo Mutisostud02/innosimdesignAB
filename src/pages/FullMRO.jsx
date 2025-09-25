@@ -10,6 +10,23 @@ export default function FullMRO() {
         />
         <h1>Full MRO capability</h1>
         <p className="lead">End-to-end propeller maintenance, repair, and overhaul to keep your fleet mission-ready.</p>
+        <div className="feature-split">
+          <div>
+            <h2 style={{marginTop:0}}>Precision and reliability</h2>
+            <p>
+              Our certified technicians perform inspections, repairs, balancing and functional tests following approved data. We focus on reducing turnaround
+              time while maintaining rigorous quality standards.
+            </p>
+          </div>
+          <figure className="feature-visual" aria-hidden="true">
+            <img
+              src="/home/prop2.jpg"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
 
         <h2 style={{marginTop:16}}>Complete propeller care</h2>
         <p>

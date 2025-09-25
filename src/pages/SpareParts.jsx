@@ -10,6 +10,23 @@ export default function SpareParts() {
         />
         <h1>Spare parts</h1>
         <p className="lead">High-quality propeller spare parts, available new and pre-owned, to keep your aircraft operating reliably.</p>
+        <div className="feature-split">
+          <div>
+            <h2 style={{marginTop:0}}>Stocked and ready</h2>
+            <p>
+              Our inventory covers common regional turboprops. We help you identify the right component fast and support you through installation and
+              documentation to minimize downtime.
+            </p>
+          </div>
+          <figure className="feature-visual" aria-hidden="true">
+            <img
+              src="/home/prop4.png"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
 
         <h2 style={{marginTop:16}}>Spare parts for every need — new and pre-owned</h2>
         <p>
