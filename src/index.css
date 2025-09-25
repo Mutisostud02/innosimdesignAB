@@ -241,6 +241,27 @@ h2, h3 { letter-spacing: -0.01em; }
 .card .link { display: inline-block; margin-top: 10px; color: var(--accent); text-decoration: none; }
 .card .link:hover { text-decoration: underline; }
 
+/* Propeller icon inside cards */
+.propeller-icon {
+  width: 101px;
+  height: 101px;
+  margin: 0 auto 10px;
+  opacity: 0.9;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2));
+  transform-origin: 50% 50%;
+  pointer-events: none; /* purely decorative */
+}
+
+@keyframes propeller-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Spin propeller while hovering the card */
+.card:hover .propeller-icon {
+  animation: propeller-spin 0.9s linear infinite;
+}
+
 /* Feature blocks */
 .feature { padding: 42px 0; }
 .feature.muted { background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.03) 10%, transparent); }
@@ -300,6 +321,7 @@ h2, h3 { letter-spacing: -0.01em; }
 
 @media (prefers-reduced-motion: reduce) {
   .button, .card, .hero .container, .services .card, .feature .container, .cta .container { transition: none !important; animation: none !important; }
+  .card:hover .propeller-icon { animation: none !important; }
 }
 
 /* Footer */

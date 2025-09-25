@@ -48,16 +48,34 @@ export default function Home() {
           <p className="section-intro">Certified technicians delivering comprehensive propeller care in-shop and in the field.</p>
           <div className="cards">
             <article id="mro" className="card">
+              <img
+                className="propeller-icon"
+                src="/propeller-svgrepo-com%20(1).svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Full MRO capability</h3>
               <p>Complete propeller care, from inspections to repairs, ensuring top performance and reliability—whenever and wherever you need it.</p>
               <Link to="/our-services/full-mro-capability" className="link">Learn more</Link>
             </article>
             <article id="field" className="card">
+              <img
+                className="propeller-icon"
+                src="/propeller-svgrepo-com%20(1).svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Field services</h3>
               <p>On-site troubleshooting and maintenance to reduce aircraft downtime and return to service quickly.</p>
               <Link to="/our-services/field-services" className="link">Learn more</Link>
             </article>
             <article id="parts" className="card">
+              <img
+                className="propeller-icon"
+                src="/propeller-svgrepo-com%20(1).svg"
+                alt=""
+                aria-hidden="true"
+              />
               <h3>Spare parts</h3>
               <p>Reliable sourcing of OEM and approved components to keep your fleet mission-ready.</p>
               <Link to="/our-services/spare-parts" className="link">Learn more</Link>
